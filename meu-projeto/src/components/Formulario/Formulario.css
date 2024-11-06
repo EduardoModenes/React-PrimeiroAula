@@ -1,0 +1,16 @@
+body{
+    background-color: #322C2B;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    background-color: #FFF0D1;
+    max-width: 800px;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 32px;
+    border: 2px solid #2f4f4f72;
+    border-radius: 16px;
+    gap: 20px;
+}

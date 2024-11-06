@@ -1,11 +1,13 @@
 .botao{
-    background-color: darkgreen;
+    background-color: #B17457;
     color: white;
     padding: 25px;
     font-size: 24px;
+    cursor: pointer;
+    border-radius: 20px;
 }
 
-.vermelho{
-    background-color: red;
-    
+.botao:hover{
+    background-color: hsl(19, 34%, 36%);
+    cursor: not-allowed;
 }
