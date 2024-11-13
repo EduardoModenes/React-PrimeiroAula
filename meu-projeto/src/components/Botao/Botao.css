@@ -9,5 +9,5 @@
 
 .botao:hover{
     background-color: hsl(19, 34%, 36%);
-    cursor: not-allowed;
+    /* cursor: not-allowed; */
 }

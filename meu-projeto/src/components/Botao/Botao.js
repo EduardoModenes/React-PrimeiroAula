@@ -3,7 +3,7 @@ import './Botao.css';
 //* Usar JS dentro do RETURN
 function Botao(props){
     return (
-        <input type="submit" className="botao" value={props.texto}  />
+        <input type="submit" className="botao" value={props.children}  />
     );
 }
 

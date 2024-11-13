@@ -20,19 +20,29 @@ function Formulario() {
         "Cientificos"
     ];
 
+    const aoSalvar = (evento) => {
+        // * Evitando a atualização da página no Submit
+        // * Ao passar o evento, podemos controlar quem ativou ele que é o <form>
+        // ^ Previne padrão - comportamento padrão de atualizar
+        evento.preventDefault(); 
+        console.log("Foi enviado");
+    }
+
     return (
-        <form className="formulario">
+        <form onSubmit={aoSalvar} className="formulario">
             <CampoTexto 
-            label="Título do Livro"
-            placeholder="Digite o título do livro" />
+            label="Título do Livro *"
+            placeholder="Digite o título do livro" 
+            obrigatorio ={true} />
 
             <CampoTexto 
-            label="Autor"
-            placeholder="Digite o nome do autor"/>
+            label="Autor *"
+            placeholder="Digite o nome do autor"
+            obrigatorio ={true} />
 
-            <ListaSuspensa label="Gênero" itens={generos}/>
+            <ListaSuspensa label="Gênero" itens={generos} obrigatorio ={true}/>
 
-            <Botao texto="Cadastrar" />
+            <Botao>Cadastrar</Botao>
         </form>
     );
 }
